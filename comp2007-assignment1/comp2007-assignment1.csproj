@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assignment1.Master" />
     <None Include="Properties\PublishProfiles\gc200263939-comp2007-assignment1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -66,10 +67,33 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="calculator.ascx" />
+    <Content Include="default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="assignment1.Master.cs">
+      <DependentUpon>assignment1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assignment1.Master.designer.cs">
+      <DependentUpon>assignment1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="calculator.ascx.cs">
+      <DependentUpon>calculator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calculator.ascx.designer.cs">
+      <DependentUpon>calculator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
