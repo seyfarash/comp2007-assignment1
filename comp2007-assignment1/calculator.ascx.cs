@@ -21,19 +21,19 @@ namespace comp2007_assignment1
 
         public int wins
         {
-            get { return int.Parse (winlose.SelectedValue); }
+            get { return int.Parse (winlose.SelectedValue); } //Use to return Win or Lose value
         }
         public int score
         {
-            get { return int.Parse(scored.Text); }
+            get { return int.Parse(scored.Text); } // Use to return Score Value
         }
         public int allow
         {
-            get { return int.Parse(allowed.Text); }
+            get { return int.Parse(allowed.Text); } // Use to return Allowed Value
         }
         public int spect
         {
-            get { return int.Parse(spectate.Text); }
+            get { return int.Parse(spectate.Text); } // Use to return number of spectators
         }
 
         protected void allowed_TextChanged(object sender, EventArgs e)
